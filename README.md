@@ -1,4 +1,4 @@
-# Raspberry Pi GPIO Shutdown Button (venv)
+# Raspberry Pi GPIO Shutdown Button 
 
 Graceful shutdown via GPIO button using a systemd service.
 Runs fully isolated in a Python virtual environment.
@@ -10,18 +10,21 @@ DEFAULT is GPIO 17. But choose your own
 * SSH/TTY notification via wall
 * systemd managed
 
-# Requirements
+## Requirements
 
-## Hardware
+### Hardware
 * Raspberry Pi 4B
 * Momentary push button
 * GPIO (BCM) -> Button -> GND
 
-## Software
+### Software
 * Python >= 3.8 (Lower not tested)
 
 ## Install
 ```bash
+git clone git@github.com:jstr00/gpio_shutdown.git
+cd gpio_shutdown
+chmod +x install.sh
 sudo ./install.sh
 ```
 

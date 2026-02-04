@@ -1,6 +1,7 @@
 [Unit]
 Description=GPIO Button Shutdown Listener
-After=multi-user.target
+After=multi-user.target sysinit.target
+Wants=multi-user.target
 
 [Service]
 Type=simple
@@ -9,7 +10,7 @@ ExecStart=/opt/gpio-shutdown/venv/bin/python /opt/gpio-shutdown/gpio_shutdown.py
 
 Restart=on-failure
 RestartSec=5
-StartLimitIntervalSec=30
+StartLimitInterval=30s
 StartLimitBurst=3
 
 [Install]

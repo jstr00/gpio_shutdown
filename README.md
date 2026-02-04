@@ -13,7 +13,7 @@ DEFAULT is GPIO 17. But choose your own
 # Requirements
 
 ## Hardware
-* Raspberry Pi 4B+
+* Raspberry Pi 4B
 * Momentary push button
 * GPIO (BCM) -> Button -> GND
 

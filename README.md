@@ -6,8 +6,7 @@ DEFAULT is GPIO 17. But choose your own
 
 ## Features
 * Long press (2s) protection
-* GPIO selectable during install (GUI)
-* SSH/TTY notification via wall
+* GPIO selectable during install
 * systemd managed
 
 ## Requirements
@@ -18,7 +17,7 @@ DEFAULT is GPIO 17. But choose your own
 * GPIO (BCM) -> Button -> GND
 
 ### Software
-* Python >= 3.8 (Lower not tested)
+* Python >= 3.8 (Lower versions not tested)
 
 ## Install
 ```bash
@@ -54,6 +53,10 @@ A physical shutdown button provides:
 * a **graceful systemd-managed shutdown**
 * clear notification to active SSH/TTY sessions before shutdown
 
+## Roadmap/TODO
+* Notify open ssh connections (Fix)
+* Use interrupts instead of polling
+* Add more description and pictures
 
 ## Disclaimer
 

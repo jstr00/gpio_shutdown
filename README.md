@@ -54,6 +54,10 @@ A physical shutdown button provides:
 * a **graceful systemd-managed shutdown**
 * clear notification to active SSH/TTY sessions before shutdown
 
+## Roadmap/TODO
+* Notify open ssh connections (Fix)
+* Use interrupts instead of polling
+* Add more description and pictures
 
 ## Disclaimer
 
